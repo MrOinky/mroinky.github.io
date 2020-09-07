@@ -1,17 +1,66 @@
 html {
-    background-color: plum;
+    background-color: lightcoral;
     font-size: 16px;
     color: darkslategray;
 }
 
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-family: "Microsoft JhengHei UI";
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: black;
+    margin-top: 0px;
+}
+
 ul {
-    background: violet;
-    padding: 6px;
-    border: 1px solid darkslategray;
+    padding: 8px;
+    border: 3px dotted black;
     margin-left: 16px;
-    margin-right: 1000px;
+    margin-right: 16px;
 }
   
 li {
     margin-left: 20px;
+    list-style-type: square;
+}
+
+.image {
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.maintext {
+    vertical-align: middle;
+    margin-right: 256px;
+    margin-left: 0px;
+}
+
+.links {
+    vertical-align: middle;
+    margin-right: 64px;
+}
+
+a:link, a:visited {
+    color: rgb(88, 0, 151);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(37, 0, 63);
 }
