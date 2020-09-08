@@ -28,6 +28,9 @@ ul {
     border: 3px dotted black;
     margin-left: 16px;
     margin-right: 16px;
+    overflow: auto;
+    word-break: break-all;
+    max-height: 108px;
 }
   
 li {
@@ -64,7 +67,19 @@ li {
     background-color: salmon;
 }
 
-a:link, a:visited {
+.listinfo {
+    color: rgb(0, 0, 150);
+}
+
+.listinfo:hover {
+    color: rgb(0, 0, 75);
+}
+
+a:link {
+    color:blue
+}
+
+a:link a:visited {
     color: rgb(88, 0, 151);
 }
 

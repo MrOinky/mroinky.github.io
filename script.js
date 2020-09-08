@@ -2,12 +2,13 @@ const list = document.createElement('ul');
 const info = document.createElement('p');
 const html = document.querySelector('html');
 
-info.textContent = 'Click to make magical list add new things. (worm on string only please)';
+info.textContent = 'Click here to make magical list add new things. (worm on string only please)';
+info.className = 'listinfo';
 
 document.body.appendChild(info);
 document.body.appendChild(list);
 
-html.onclick = function() {
+info.onclick = function() {
   const listItem = document.createElement('li');
   const listContent = prompt('Magical List says: what do i add?');
   listItem.textContent = listContent;
