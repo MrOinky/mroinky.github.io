@@ -1,8 +1,8 @@
 const list = document.createElement('ul');
-const info = document.createElement('p');
+const info = document.createElement('span');
 const html = document.querySelector('html');
 
-info.textContent = 'Click here to make magical list add new things. (worm on string only please)';
+info.textContent = 'Add item';
 info.className = 'listinfo';
 
 document.body.appendChild(info);

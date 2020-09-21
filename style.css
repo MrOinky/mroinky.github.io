@@ -1,7 +1,10 @@
+/* Whole Page */
+
 html {
-    background-color: lightcoral;
-    font-size: 16px;
-    color: darkslategray;
+    background-color: #f8b7ff;
+    font-size: 18px;
+    color: black;
+    font-family: "Microsoft JhengHei UI";
 }
 
 body {
@@ -11,16 +14,34 @@ body {
     margin-bottom: 0px;
 }
 
+/* Headings */
+
+/*Top Navigation bar*/
 h1 {
     color: white;
     font-size: 36px;
-    font-family: "Microsoft JhengHei UI";
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     background-color: black;
     margin-top: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 36px;
+}
+
+/* Basic Elements */
+
+p {
+    margin-left: 36px;
 }
 
 ul {
@@ -37,6 +58,12 @@ li {
     margin-left: 20px;
     list-style-type: square;
 }
+
+/* Other
+i have already forgotten what does what here
+dont mess with it i guess unless you want to
+ruin the page structure
+*/
 
 .image {
     margin-top: 0px;
@@ -64,19 +91,22 @@ li {
     border-radius: 40px;
     border-color: black;
     color: black;
-    background-color: salmon;
+    background-color: #e784f2;
 }
 
 .listinfo {
-    color: rgb(0, 0, 150);
+    background-color: #da31ec;
+    border-radius: 30px;
+    margin-left: 36px;
+    padding: 6px;
 }
 
 .listinfo:hover {
-    color: rgb(0, 0, 75);
+    background-color: #ab28b9;
 }
 
 a:link {
-    color:blue
+    color:blue;
 }
 
 a:link a:visited {
