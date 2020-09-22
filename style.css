@@ -60,13 +60,9 @@ li {
     list-style-type: square;
 }
 
-/* Other
-i have already forgotten what does what here
-dont mess with it i guess unless you want to
-ruin the page structure
-*/
+/* Navigation Bar/Title Bar (tehcnically h1 is also part of this) */
 
-.image {
+#titleimage {
     margin-top: 0px;
     margin-right: 12px;
     margin-bottom: 0px;
@@ -76,7 +72,7 @@ ruin the page structure
     vertical-align: middle;
 }
 
-#maintext {
+#titletext {
     vertical-align: middle;
     margin-right: 228px;
     margin-left: 0px;
@@ -84,20 +80,7 @@ ruin the page structure
     text-decoration: none;
 }
 
-/* --something something this breaks stuff
-a:link {
-    color:blue;
-}
-
-a:link a:visited {
-    color: rgb(88, 0, 151);
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(37, 0, 63);
-}
-*/
+/* Title Bar Links */
 
 .links, .WIPLink, #current {
     text-decoration: none;
@@ -124,6 +107,28 @@ a:hover {
 #current {
     background-color: #df46f0;
 }
+
+/* Other
+This does something but i forgot what and
+why
+*/
+
+/* --something something this breaks stuff
+a:link {
+    color:blue;
+}
+
+a:link a:visited {
+    color: rgb(88, 0, 151);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(37, 0, 63);
+}
+*/
+
+
 
 .listinfo {
     background-color: #da31ec;
