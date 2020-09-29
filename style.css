@@ -80,9 +80,15 @@ li {
     text-decoration: none;
 }
 
+#mooimage {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
 /* Title Bar Links */
 
-.links, .WIPLink, #current {
+.links, .WIPLink, #current, #moolink {
     text-decoration: none;
     font-size: 24px;
     vertical-align: middle;
@@ -108,12 +114,17 @@ li {
     background-color: #df46f0;
 }
 
-/* Other
-This does something but i forgot what and
-why
-*/
+#moolink {
+    background-color: #efd140;
+}
 
-/* --something something this breaks stuff
+#moolink:hover {
+    background-color: #dabf3a;
+}
+
+/* something something this breaks stuff
+   maybe methinks
+  
 a:link {
     color:blue;
 }
