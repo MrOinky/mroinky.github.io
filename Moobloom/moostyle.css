@@ -1,0 +1,188 @@
+/* Whole Page */
+
+html {
+    background-image: url(bg.png);
+    font-size: 18px;
+    color: black;
+    font-family: "Microsoft JhengHei UI";
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+/* Headings */
+
+/*Top Navigation bar*/
+h1 {
+    color: black;
+    font-size: 36px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    background-color: #f6f1ef;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-left: 12px;
+    color: darkslategray;
+}
+
+h3 {
+    font-size: 24px;
+    margin-left: 36px;
+}
+
+/* Basic Elements */
+
+p {
+    font-size: 20px;
+    color: darkslategray;
+}
+
+ul {
+    padding: 8px;
+    border: 3px dotted black;
+    margin-left: 16px;
+    margin-right: 16px;
+    overflow: auto;
+    word-break: break-all;
+    max-height: 108px;
+}
+  
+li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Navigation Bar/Title Bar (tehcnically h1 is also part of this) */
+
+#titleimage {
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    width: 48px;
+    height: 64px;
+    vertical-align: middle;
+}
+
+#titletext {
+    vertical-align: middle;
+    margin-right: 228px;
+    margin-left: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+#mooimage {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+/* Title Bar Links */
+
+.links, .WIPLink, #current, #moolink {
+    text-decoration: none;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 64px;
+    padding: 8px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 30px;
+    border-color: black;
+    color: black;
+    background-color: #f0d140;
+}
+
+.WIPLink {
+    background-color: #f0d140;
+}
+
+.links:hover {
+    background-color: #dabf3a;
+}
+
+#current {
+    background-color: #f0d140;
+}
+
+#moolink {
+    background-color: #ffdd35;
+}
+
+/* something something this breaks stuff
+   maybe methinks
+  
+a:link {
+    color:blue;
+}
+
+a:link a:visited {
+    color: rgb(88, 0, 151);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(37, 0, 63);
+}
+*/
+
+
+
+.listinfo {
+    background-color: #da31ec;
+    border-radius: 30px;
+    margin-left: 36px;
+    padding: 6px;
+}
+
+.listinfo:hover {
+    background-color: #ab28b9;
+}
+
+/* All the stuff for moobloom (probably going to get messy) */
+
+.topbox {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 20px;
+    padding: 0.2vw;
+}
+
+#sideleftbox {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 71vw;
+    border-radius: 20px;
+    padding: 0.2vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sidebox {
+    text-align: center;
+    vertical-align: top;
+    width: 21vw;
+    margin-left: 1.6vw;
+    margin-right: 0vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 0.2vw;
+    display: inline-block;
+    border-radius: 20px;
+    
+    background-color: rgba(255, 232, 23, 0.7);
+}
