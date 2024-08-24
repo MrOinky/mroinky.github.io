@@ -1,153 +1,203 @@
 /* Whole Page */
 
 html {
-    background-color: #f8b7ff;
-    font-size: 18px;
-    color: black;
-    font-family: "Microsoft JhengHei UI";
+    background-color: #3f0a46;
+    color: #faceff;
+    font-family: "Trebuchet MS", "Noto Sans", "Calibri";
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+html[light] {
+    background-color: #ec904c;
+    color: #532306;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
 }
 
 body {
+    background: none;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
+    text-align: center;
 }
+
+/* Navigation Bar */
+
+nav {
+    font-size: 24px;
+    padding: 16px;
+    background-color: rgba(61, 0, 217, 0.12);
+    margin-top: 0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #faceff;
+    text-align: left;
+    transition:
+        border-bottom-color 0.5s ease-out;
+}
+
+nav[light] {
+    border-bottom-color: #532306;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbar_link {
+    color: #faceff;
+    margin-left: 16px;
+    margin-right: 24px;
+    text-decoration: none;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbar_link[light] {
+    color: #532306;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.current {
+    color: #e557f6;
+}
+
+.current[light] {
+    color: #883705;
+}
+
+.navbar_link:hover {
+    color: #59a3ee;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbar_link[light]:hover {
+    color: #155c7d;
+}
+
+/* Navigation Box */
+
+.navbox {
+    color: #faceff;
+    display: inline-block;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #faceff;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-left: 2px;
+    padding-bottom: 8px;
+    margin: 8px;
+    background-color: rgba(61, 0, 217, 0.12);
+    text-align: left;
+    width: 40%;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbox[light] {
+    color: #532306;
+    border-color: #532306;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbox:hover {
+    border-color: #59a3ee;
+    color: #59a3ee;
+}
+
+.navbox:hover[light] {
+    border-color: #155c7d;
+    color: #155c7d;
+}
+
+.navbox_p {
+    padding-left: 2px;
+    padding-right: 2px;
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
+.navbox_h2 {
+    transition:
+        background-color 0.5s ease-out, 
+        border-color 0.5s ease-out,
+        color 0.5s ease-out;
+}
+
 
 /* Headings */
 
-/*Top Navigation bar*/
 h1 {
-    color: white;
-    font-size: 36px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    background-color: black;
-    margin-top: 0px;
+    font-size: 32px;
+    margin: 6px;
+    margin-top: 24px;
+}
+
+.h1_img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    padding-bottom: 6.5px;
 }
 
 h2 {
-    font-size: 24px;
-    margin-left: 12px;
+    margin: 4px;
 }
 
 h3 {
-    font-size: 20px;
-    margin-left: 36px;
+    margin: 4px;
 }
 
-/* Basic Elements */
+/* Other Elements */
 
 p {
-    margin-left: 36px;
-    margin-right: 25vw;
+    background: none;
+    margin: 6px;
 }
 
-ul {
-    padding: 8px;
-    border: 3px dotted black;
-    margin-left: 16px;
-    margin-right: 16px;
-    overflow: auto;
-    word-break: break-all;
-    max-height: 108px;
-}
-  
-li {
-    margin-left: 20px;
-    list-style-type: square;
-}
-
-/* Navigation Bar/Title Bar (tehcnically h1 is also part of this) */
-
-#titleimage {
-    margin-top: 0px;
-    margin-right: 12px;
-    margin-bottom: 0px;
-    margin-left: 12px;
-    width: 48px;
-    height: 48px;
-    vertical-align: middle;
-}
-
-#titletext {
-    vertical-align: middle;
-    margin-right: 228px;
-    margin-left: 0px;
-    color: white;
-    text-decoration: none;
-}
-
-#mooimage {
-    height: 32px;
-    width: 32px;
-    vertical-align: middle;
-}
-
-/* Title Bar Links */
-
-.links, .WIPLink, #current, #moolink {
-    text-decoration: none;
-    font-size: 24px;
-    vertical-align: middle;
-    margin-right: 64px;
-    padding: 8px;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 30px;
-    border-color: black;
+#button_lightmode {
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: px;
     color: black;
-    background-color: #e784f2;
+    border-style: solid;
+    vertical-align: top;
+    font-family: "Trebuchet MS", "Noto Sans", "Calibri";
+    border-width: 4px;
+    padding: 2px;
+    transition:
+        color 0.5s ease-out,
+        background-color 0.5s ease-out,
+        border-color 0.5s ease-out;
 }
 
-.WIPLink {
-    background-color: #747474;
-}
-
-.links:hover {
-    background-color: #e15df0;
-}
-
-#current {
-    background-color: #df46f0;
-}
-
-#moolink {
-    background-color: #efd140;
-}
-
-#moolink:hover {
-    background-color: #d3ba3f;
-}
-
-/* something something this breaks stuff
-   maybe methinks
-  
-a:link {
-    color:blue;
-}
-
-a:link a:visited {
-    color: rgb(88, 0, 151);
-}
-
-a:hover {
-    text-decoration: none;
-    color: rgb(37, 0, 63);
-}
-*/
-
-
-
-.listinfo {
-    background-color: #da31ec;
-    border-radius: 30px;
-    margin-left: 36px;
-    padding: 6px;
-}
-
-.listinfo:hover {
-    background-color: #ab28b9;
+#button_lightmode[light] {
+    background-color: black;
+    border-color: black;
+    color: white;
 }

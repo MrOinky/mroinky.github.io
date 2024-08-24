@@ -1,22 +1,46 @@
-const list = document.createElement('ul');
-const info = document.createElement('span');
-const html = document.querySelector('html');
+var button_lightmode = document.getElementById("button_lightmode")
+var theme = localStorage.getItem("theme")
+if (theme === null) {
+  theme = "dark"
+}
 
-info.textContent = 'Add item';
-info.className = 'listinfo';
+updateElementsForTheme(theme)
 
-document.body.appendChild(info);
-document.body.appendChild(list);
+if (button_lightmode != null) {
+  button_lightmode.addEventListener("click", toggleTheme)
+}
 
-info.onclick = function() {
-  const listItem = document.createElement('li');
-  const listContent = prompt('Magical List says: what do i add?');
-  listItem.textContent = listContent;
-  list.appendChild(listItem);
+function toggleTheme() {
+  theme = (theme === "dark") ? "light" : "dark"
+  
+  localStorage.setItem("theme", theme)
+  updateElementsForTheme(theme)
+}
 
-  listItem.onclick = function(e) {
-    e.stopPropagation();
-    const listContent = prompt('Magical List says: What should replace this?');
-    this.textContent = listContent;
+function updateElementsForTheme(theme) {
+  var elements = document.children;
+  var elements_array = Array.from(elements)
+  if (theme === "light") {
+    elements_array.forEach(element => {
+      applyThemeRecursive(theme, element)
+    });
+  } else if (theme === "dark") {
+    elements_array.forEach(element => {
+      applyThemeRecursive(theme, element)
+    });
+  } else {
+    console.log("Unexpected theme type: " + theme)
+  }
+}
+
+function applyThemeRecursive(theme, element) {
+  var elements_array = Array.from(element.children)
+  elements_array.forEach(child_element => {
+    applyThemeRecursive(theme, child_element)
+  })
+  if (theme === "light") {
+    element.setAttribute("light", "")
+  } else {
+    element.removeAttribute("light")
   }
 }
