@@ -168,6 +168,13 @@ h2 {
     margin: 4px;
 }
 
+.h2_img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
 h3 {
     margin: 4px;
 }
