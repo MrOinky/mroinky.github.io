@@ -1,8 +1,5 @@
 var button_lightmode = document.getElementById("button_lightmode")
-var theme = localStorage.getItem("theme")
-if (theme === null) {
-  theme = "dark"
-}
+var theme = "dark"
 
 updateElementsForTheme(theme)
 
@@ -12,8 +9,7 @@ if (button_lightmode != null) {
 
 function toggleTheme() {
   theme = (theme === "dark") ? "light" : "dark"
-  
-  localStorage.setItem("theme", theme)
+
   updateElementsForTheme(theme)
 }
 
